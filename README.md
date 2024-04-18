@@ -1,6 +1,6 @@
 # persistent_array
 
-`persistent_array` 是一个 C++ 模板类，实现了一个持久化数组数据结构。它允许用户在不同版本中进行元素的查找和修改，时间复杂度为 $O(\log N)$（$N$ 是数组中的元素个数）。
+`persistent_array` 是一个 C++ 模板类，实现了一个持久化数组数据结构。它允许用户在不同版本中进行元素的查找和修改，时间复杂度为 $O(\log N)$（ $N$ 是数组中的元素个数）。
 
 The `persistent_array` is a C++ template class that implements a persistent array data structure. It allows users to perform element searches and modifications across different versions while maintaining the time complexity of $O(\log N)$ ($N$ is the size of the array).
 
