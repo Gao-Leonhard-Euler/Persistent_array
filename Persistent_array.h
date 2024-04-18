@@ -54,11 +54,11 @@ namespace my_data_struct{
 			unsigned int version_size()const{return vermax;}
 			bool empty()const{return siz==0;}
 			T view(unsigned int loc=0,unsigned int ver=0){
-				if(loc>=siz)return T();
-				return search(mp[ver<vermax?ver:0],loc);
+				if(ver>=vermax||loc>=siz)return T();
+				return search(mp[ver],loc);
 			}
 			unsigned int change(unsigned int loc,const T& val,unsigned int ver=0){
-				if(empty()||ver>=vermax||loc>=siz)return 0;
+				if(ver>=vermax||loc>=siz)return 0;
 				mp[vermax++]=newNode(mp[ver],loc,val);
 				return vermax-1;
 			}
