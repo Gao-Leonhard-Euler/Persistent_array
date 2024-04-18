@@ -45,3 +45,8 @@ The version number of the initial version is denoted as 0.
 无需特别安装，只需包含头文件 `Persistent_array.h` 即可使用。支持 C++11 及以上版本。
 
 No special installation is required; simply include the header file `Persistent_array.h` to use. Supports C++11 and above.
+
+## License
+
+本项目采用**CC BY-SA 4.0**知识共享许可协议。如需了解该协议，请查阅[https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans)\
+This work is licensed under CC BY-SA 4.0. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/)
