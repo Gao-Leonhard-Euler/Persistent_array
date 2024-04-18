@@ -1,8 +1,8 @@
 # persistent_array
 
-`persistent_array` 是一个 C++ 模板类，实现了一个持久化数组数据结构。它允许用户在不同版本中进行元素的查找和修改，同时保持高效的时间复杂度。
+`persistent_array` 是一个 C++ 模板类，实现了一个持久化数组数据结构。它允许用户在不同版本中进行元素的查找和修改，时间复杂度为 $O(\log N)$（$N$ 是数组中的元素个数）。
 
-The `persistent_array` is a C++ template class that implements a persistent array data structure. It allows users to perform element searches and modifications across different versions while maintaining efficient time complexity.
+The `persistent_array` is a C++ template class that implements a persistent array data structure. It allows users to perform element searches and modifications across different versions while maintaining the time complexity of $O(\log N)$ ($N$ is the size of the array).
 
 ## 特点 / Features
 - **模板类**：支持任何数据类型的存储。
@@ -34,7 +34,7 @@ The version number of the initial version is denoted as 0.
 - **version_size()**：返回版本号数量。返回一个`unsigned int`类型整数。
 - **version_size()**: Returns the total number of version. Returns an integer of type `unsigned int`.
 - **empty()**：检查数组是否为空。返回一个`bool`值。
-- **empty()**: Checks if the array is empty. Returns a value of type bool.
+- **empty()**: Checks if the array is empty. Returns a value of type `bool`.
 - **view(unsigned int loc,unsigned int ver)**：查看位置为`loc`的元素在`ver`版本的值。
 - **view(unsigned int loc,unsigned int ver)**: Views the value of the element at position `loc` in version `ver`.
 - **change(unsigned int loc,const T& val,unsigned int ver)**：基于`ver`版本将位置为`loc`的元素值改为`val`，并返回新版本的版本号。返回一个`unsigned int`类型整数。
