@@ -1,6 +1,4 @@
-# 中文版 Readme
-
-## persistent_array 类简介 / Introduction to persistent_array Class
+# persistent_array
 
 `persistent_array` 是一个 C++ 模板类，实现了一个持久化数组数据结构。它允许用户在不同版本中进行元素的查找和修改，同时保持高效的时间复杂度。
 
